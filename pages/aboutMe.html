@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A propose de moi</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/quizz.css">
+</head>
+<body>
+     <!-- Hearder -->
+     <header>
+        <div class="profile">
+            <img src="../ressource/photoDavid.jpg" alt="Photo de David CHAUSSINAND" />
+            <span>David Chaussinand</span>
+        </div>
+    
+        <button class="burger">
+            &#9776; <!-- Symbole burger -->
+        </button>
+    
+        <nav class="nav-links">
+            <a href="../index.html">Portfolio</a>
+            <a href="aboutMe.html">À propos de moi</a>
+            <a href="cv.html">Mon CV</a>
+        </nav>
+    </header>
+  
+    <!-- Quizz-->
+    <h1>
+        <span>Quizz</span>
+        Pour mieux me connaître. ☑️
+      </h1>
+  
+      <div class="global-container">
+  
+        <form class="quiz-form">
+          <div class="question-block">
+            <h4>Quel a été mon précédent métier et combien de temps l'ai-je exercé ?</h4>
+
+  
+            <div>
+              <input type="radio" id="immobilier" name="q1" value="a" checked />
+              <label for="immobilier">Agent immobilier pendant 5 ans</label>
+            </div>
+  
+            <div>
+              <input type="radio" id="Footballeur" name="q1" value="b" />
+              <label for="Footballeur">Footballeur professionnel pendant 3 ans </label>
+            </div>
+  
+            <div>
+              <input type="radio" id="assurance" name="q1" value="c" />
+              <label for="assurance">Conseiller en assurance pendant 15 ans</label>
+            </div>
+            <p class="observation"></p>
+          </div>
+  
+          <div class="question-block">
+            <h4>Quelle est ma passion en dehors de la programmation ?</h4>
+            <div>
+              <input type="radio" id="passion1" name="q2" value="a" checked />
+              <label for="passion1">le sport ,les mangas, les jeux de société</label>
+            </div>
+  
+            <div>
+              <input type="radio" id="passion2" name="q2" value="b" />
+              <label for="passion2">La photographie et les voyages</label>
+            </div>
+  
+            <div>
+              <input type="radio" id="passion3" name="q2" value="c" />
+              <label for="passion3">la cuisine</label>
+            </div>
+            <p class="observation"></p>
+          </div>
+  
+          <div class="question-block">
+            <h4>Qu'est-ce que j'aime le plus dans la programmation ?</h4>
+            <div>
+              <input type="radio" id="like1" name="q3" value="a" checked />
+              <label for="like1"> La créativité et la liberté d'exprimer mes idées à travers le code.</label>
+            </div>
+            
+            <div>
+                <input type="radio" id="like2" name="q3" value="b" />
+                <label for="like2">Résoudre des problèmes complexes et voir la satisfaction d'un code qui fonctionne.</label>
+            </div>
+  
+            <div>
+              <input type="radio" id="like3" name="q3" value="c" />
+              <label for="like3">La constante évolution du domaine, qui offre toujours quelque chose de nouveau à apprendre.</label>
+            </div>
+            <p class="observation"></p>
+          </div>
+  
+          <div class="question-block">
+            <h4>Quelle est ma principale qualité en tant que développeur ?</h4>
+  
+            <div>
+              <input type="radio" id="qualite1" name="q4" value="a" checked />
+              <label for="qualite1">Mon souci du détail et ma persévérance pour déboguer et optimiser le code</label>
+            </div>
+            
+            <div>
+                <input type="radio" id="qualite2" name="q4" value="b" />
+                <label for="qualite2">Ma capacité à travailler en équipe et à communiquer efficacement mes idées</label>
+            </div>
+  
+            <div>
+              <input type="radio" id="qualite3" name="q4" value="c" />
+              <label for="qualite3">Mon adaptabilité et ma rapidité à apprendre de nouveaux langages ou technologies</label>
+            </div>
+            <p class="observation"></p>
+          </div>
+  
+          <div class="question-block">
+            <h4>Si j'étais un animal, lequel serais-je ?</h4>
+            <div>
+              <input type="radio" id="animal1" name="q5" value="a" checked />
+              <label for="animal1">Un dauphin</label>
+            </div>
+  
+            <div>
+              <input type="radio" id="animal2" name="q5" value="b" />
+              <label for="animal2">Un kangourou</label>
+            </div>
+  
+            <div>
+              <input type="radio" id="animal3" name="q5" value="c" />
+              <label for="animal3">Un aigle</label>
+            </div>
+            <p class="observation"></p>
+          </div>
+
+          <div class="question-block">
+            <h4>Comment je me vois dans 5 ans ?</h4>
+
+  
+            <div>
+              <input type="radio" id="autremétier" name="q6" value="a" checked />
+              <label for="autremétier">Explorer de nouveaux horizons selon mes passions</label>
+            </div>
+  
+            <div>
+              <input type="radio" id="fidele" name="q6" value="b" />
+              <label for="fidele">Un développeur expérimenté et une valeur ajoutée à l'entreprise </label>
+            </div>
+  
+            <div>
+              <input type="radio" id="assurance" name="q6" value="c" />
+              <label for="assurance">Peut-être revenir à mes racines si la programmation ne répond pas à mes attentes</label>
+            </div>
+            <p class="observation"></p>
+          </div>
+  
+          <button type="submit">VALIDER ✔️</button>
+        </form>
+  
+        <div class="results">
+          <h2>Cliquez sur <span>valider</span> pour voir les <span>résultats.</span></h2>
+          <p class="mark"></p>
+          <p class="help"></p>
+        </div>
+  
+      </div>
+   
+
+   
+
+  
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2023 - CHAUSSINAND DAVID</p>
+      <a href="https://github.com/DavidChaussinand" target="_blank" rel="noopener noreferrer">
+          <img src="../ressource/github.png" alt="GitHub" width="30">
+      </a>
+    </footer>
+
+    
+    <script src="../javascript/burger.js"></script>
+    <script src="../javascript/quizz.js"></script>
+</body>
+</html>

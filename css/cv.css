@@ -1,0 +1,49 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    background-color: #f9f8f2;
+}
+
+#lienPDF {
+    display: block;
+    width: 60%;
+    margin: 20px auto;
+    padding: 10px;
+    background: #333;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+#monImage {
+    width: 400px;
+    height: calc(80vh - 60px - 40px - 52px); /* 60px est la hauteur du header, 40px est la marge totale du lien, 52px est la hauteur du lien */
+    display: block;
+    margin: 0 auto;
+}
+
+
+
+footer{
+    margin-top: 10px;
+    background-color: #FEF9E7;
+}
+
+
+@media screen and (min-width: 768px) {
+    #monImage {
+        width: 600px; 
+        height: calc(100vh - 60px - 40px - 52px); 
+        
+    }
+    #lienPDF {
+        width: 30%;
+        
+    }
+}
+@media screen and (min-width: 1024px) {
+    #monImage {
+        width: 800px; 
+        height: calc(120vh - 60px - 40px - 52px); 
+   
+    }
+}
