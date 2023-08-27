@@ -3,7 +3,7 @@ const errorInformation = document.querySelector(".error-information");
 
 async function getWeatherData(){
   try {
-    const response = await fetch("http://api.airvisual.com/v2/nearest_city?key=5dfff0f5-926e-4a53-96a7-4b3b615a1f32")
+    const response = await fetch("https://api.airvisual.com/v2/nearest_city?key=5dfff0f5-926e-4a53-96a7-4b3b615a1f32")
 
     if(!response.ok) {
       throw new Error(`Error ${response.status}, ${response.statusText}`)
