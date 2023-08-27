@@ -1,3 +1,4 @@
+const loader = document.querySelector(".loader-container");
 const errorInformation = document.querySelector(".error-information");
 
 async function getWeatherData(){
@@ -20,6 +21,7 @@ async function getWeatherData(){
     populateUI(sortedData)
   }
   catch (error) {
+    loader.classList.remove("active");
     errorInformation.textContent = error.message;
   }
 }
@@ -34,6 +36,7 @@ function populateUI(data){
   temperature.textContent = `${data.temperature}°`;
   infoIcon.src = `ressource/meteo/icons/${data.iconId}.svg`;
   infoIcon.style.width = "50px";
+  loader.classList.remove("active");
 }
 
 
