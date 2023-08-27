@@ -110,3 +110,7 @@ span {
 }
 
 
+.btnSection a:hover {
+    background: rgb(91, 55, 61);
+} 
+
