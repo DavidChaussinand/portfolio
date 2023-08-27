@@ -14,43 +14,24 @@
 </head>
 <body>
     <!-- header -->
-     <!-- <header>
-        <div class="profile">
-            <img src="ressource/photoDavid.jpg" alt="Photo de David CHAUSSINAND" />
-            
-        </div>
-        
-        <button class="burger">
-            &#9776; 
-        </button>
-        
-     
-        <nav class="nav-links">
-            <a href="index.html">Portfolio</a>
-            <a href="pages/aboutMe.html">À propos de moi</a>
-            <a href="pages/cv.html">Mon CV</a>
-        </nav>
-    </header> -->
-
-    <nav id="nav">
-        <img src="ressource/photoDavid.jpg" alt="Photo de David CHAUSSINAND" />
-        <ul>
-          <li>
-            <a href="index.html">Portfolio</a>
-          </li>
-          <li>
-            <a href="pages/aboutMe.html">À propos de moi</a>
-          </li>
-          <li>
-            <a href="pages/cv.html">Mon CV</a>
-          </li>
-        </ul>
-        <div id="icons"></div>
-      </nav>
-
-
-
-
+    
+     <header>
+         <nav id="nav">
+             <img src="ressource/photoDavid.jpg" alt="Photo de David CHAUSSINAND" />
+             <ul>
+               <li>
+                 <a href="index.html">Portfolio</a>
+               </li>
+               <li>
+                 <a href="pages/aboutMe.html">À propos de moi</a>
+               </li>
+               <li>
+                 <a href="pages/cv.html">Mon CV</a>
+               </li>
+             </ul>
+             <div id="icons"></div>
+           </nav>
+     </header>
 
     <!-- Section Présentation -->
     <section id="presentation" data-bg="ressource/Hands.jpg">
@@ -198,15 +179,23 @@
     
     <!-- Footer -->
     <footer>
-        <p>&copy; 2023 - CHAUSSINAND DAVID</p>
         <a href="https://github.com/DavidChaussinand" target="_blank" rel="noopener noreferrer">
             <img src="ressource/github.png" alt="GitHub" width="30">
         </a>
+        <p>&copy; 2023 - CHAUSSINAND DAVID</p>
+        <div class="meteo">
+            <p class="error-information"></p>
+            <p class="city-name">Paris</p>
+            <p class="temperature">20°</p>
+            <img src="ressource/meteo/browser.svg" alt="info icon" class="info-icon">
+            
+        </div>
     </footer>
     
     
     <!-- <script src="javascript/burger.js"></script> -->
     <script src="javascript/burger.js"></script>
     <script src="javascript/formulaire.js"></script>
+    <script src="javascript/meteo.js"></script>
     </body>
 </html>
