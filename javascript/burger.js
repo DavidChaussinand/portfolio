@@ -1,15 +1,11 @@
-var burgerButton = document.querySelector('.burger');
-var navLinks = document.querySelector('.nav-links');
+const links = document.querySelectorAll("nav li");
 
-burgerButton.addEventListener('click', function() {
-    if (navLinks.style.display === 'none' || navLinks.style.display === '') {
-        navLinks.style.display = 'flex';
-        burgerButton.style.display = 'none'; // Cache le bouton burger
-    }
+icons.addEventListener("click", () => {
+  nav.classList.toggle("active");
 });
 
-// Ajoutez une fonction pour cacher le menu et réafficher le bouton burger lorsque le menu est cliqué
-navLinks.addEventListener('click', function() {
-    navLinks.style.display = 'none';
-    burgerButton.style.display = 'block'; // Réaffiche le bouton burger
+links.forEach((link) => {
+  link.addEventListener("click", () => {
+    nav.classList.remove("active");
+  });
 });
